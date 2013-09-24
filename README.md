@@ -36,8 +36,12 @@ chart example,  with  ggplot2, rcharts etc
 ![stacked_area-ggplot2.png](stacked_area-ggplot2.png)
 
 
-## hist_bar 直方图
+## bar 柱状图
 
-### [hist_bar-facets-ggplot2.r](hist_bar-facets-ggplot2.r)
+### 直方图 [hist_bar-facets-ggplot2.r](hist_bar-facets-ggplot2.r)
 
 ![hist_bar-facets-ggplot2.png](hist_bar-facets-ggplot2.png)
+
+### 多个颜色柱状图 [multi_color_bar-ggplot2.r](multi_color_bar-ggplot2.r)
+
+![multi_color_bar-ggplot2.png](multi_color_bar-ggplot2.png)
