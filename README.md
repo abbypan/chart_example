@@ -3,7 +3,8 @@ chart_example
 
 chart example,  with  ggplot2, rcharts etc
 
-[TOC]
+参考：[ggplot2 doc](http://docs.ggplot2.org/current/)
+
 
 ## symbol_line 折线图
 
