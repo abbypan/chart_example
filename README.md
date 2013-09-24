@@ -45,3 +45,11 @@ chart example,  with  ggplot2, rcharts etc
 ### 多个颜色柱状图 [multi_color_bar-ggplot2.r](multi_color_bar-ggplot2.r)
 
 ![multi_color_bar-ggplot2.png](multi_color_bar-ggplot2.png)
+
+### 累积柱状图 [stacked_bar-ggplot2.r](stacked_bar-ggplot2.r)
+
+![stacked_bar-ggplot2.png](stacked_bar-ggplot2.png)
+
+### 多柱图 [multi_bar-ggplot2.r](multi_bar-ggplot2.r)
+
+![multi_bar-ggplot2.png](multi_bar-ggplot2.png)
