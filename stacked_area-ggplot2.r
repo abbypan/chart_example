@@ -10,7 +10,6 @@ opt <- list()
 opt$variable = c('good','normal', 'bad', 'fail')
 opt$color = c('lightblue', 'lightgreen','yellow','red')
 
-myd$variable <- ordered(myd$variable, levels = opt$variable)
 
 p <- ggplot(myd, aes(x=time,y=value,group=variable,fill=variable)) + 
 geom_area(position="fill") +
