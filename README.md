@@ -32,9 +32,9 @@ chart example,  with  ggplot2, rcharts etc
 
 ![stacked_area-rcharts.png](stacked_area-rcharts.png)
 
-### [chart_stacked_area.r](chart_stacked_area.r)
+### [02.chart_stacked_area.r](02.chart_stacked_area.r)
 
-![chart_stacked_area.png](chart_stacked_area.png)
+![02.chart_stacked_area.png](02.chart_stacked_area.png)
 
 
 ## bar 柱状图
@@ -47,10 +47,10 @@ chart example,  with  ggplot2, rcharts etc
 
 ![multi_color_bar-ggplot2.png](multi_color_bar-ggplot2.png)
 
-### 累积柱状图 [chart_stacked_bar2.r](chart_stacked_bar2.r)
+### 累积柱状图 [03.chart_stacked_bar.r](03.chart_stacked_bar.r)
 
-![chart_stacked_bar2.png](chart_stacked_bar2.png)
+![03.chart_stacked_bar.png](03.chart_stacked_bar.png)
 
-### 多柱图 [chart_multi_bar.r](chart_multi_bar.r)
+### 多柱图 [04.chart_multi_bar.r](04.chart_multi_bar.r)
 
-![chart_multi_bar.png](chart_multi_bar.png)
+![04.chart_multi_bar.png](04.chart_multi_bar.png)
