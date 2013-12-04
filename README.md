@@ -12,9 +12,9 @@ chart example,  with  ggplot2, rcharts etc
 
 ![symbol_line-rcharts.png](symbol_line-rcharts.png)
 
-### [symbol_line-ggplot2.r](symbol_line-ggplot2.r)
+### [01.chart_line.r](01.chart_line.r)
 
-![symbol_line-ggplot2.png](symbol_line-ggplot2.png)
+![01.chart_line.png](01.chart_line.png)
 
 ### [symbol_line-rate-ggplot2.r](symbol_line-rate-ggplot2.r)
 
@@ -32,9 +32,9 @@ chart example,  with  ggplot2, rcharts etc
 
 ![stacked_area-rcharts.png](stacked_area-rcharts.png)
 
-### [stacked_area-ggplot2.r](stacked_area-ggplot2.r)
+### [chart_stacked_area.r](chart_stacked_area.r)
 
-![stacked_area-ggplot2.png](stacked_area-ggplot2.png)
+![chart_stacked_area.png](chart_stacked_area.png)
 
 
 ## bar 柱状图
@@ -47,10 +47,10 @@ chart example,  with  ggplot2, rcharts etc
 
 ![multi_color_bar-ggplot2.png](multi_color_bar-ggplot2.png)
 
-### 累积柱状图 [stacked_bar-ggplot2.r](stacked_bar-ggplot2.r)
+### 累积柱状图 [chart_stacked_bar2.r](chart_stacked_bar2.r)
 
-![stacked_bar-ggplot2.png](stacked_bar-ggplot2.png)
+![chart_stacked_bar2.png](chart_stacked_bar2.png)
 
-### 多柱图 [multi_bar-ggplot2.r](multi_bar-ggplot2.r)
+### 多柱图 [chart_multi_bar.r](chart_multi_bar.r)
 
-![multi_bar-ggplot2.png](multi_bar-ggplot2.png)
+![chart_multi_bar.png](chart_multi_bar.png)
