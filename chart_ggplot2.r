@@ -1,6 +1,8 @@
 library(grid)
 library(reshape2)
 library(ggplot2)
+library(plyr)
+library(stringr)
 
 chart_multi_bar <- function(raw_file, opt) {
 
@@ -13,14 +15,14 @@ chart_multi_bar <- function(raw_file, opt) {
                 aes(x=label, y=value, group=legend, fill=legend)
                 ) + 
 ggtitle(opt$title) +
+xlab(opt$xlab) +
+ylab(opt$ylab) +
 
 geom_bar(stat="identity", position=position_dodge()) + 
 
 scale_fill_manual(values = opt$color)  +
 scale_x_discrete(expand = c(0, 0)) +  
 coord_cartesian(ylim=c(0,1)) +
-xlab(opt$xlab) +
-ylab(opt$ylab) +
 theme(axis.text.x  = element_text(angle=opt$x_text_angle, vjust=1, hjust=1),
       plot.margin = unit(c(1,1,1,1), "cm")
       )
@@ -104,4 +106,18 @@ theme(axis.text.x  = element_text(angle=opt$x_text_angle, vjust=1, hjust=1),
 
 ggsave(p, filename=opt$file, width=opt$width , height=opt$height)
 
+}
+
+chart_bar <- function(raw_file, opt){
+    mydata <- read.table(raw_file, header=opt$header, sep=opt$sep)
+    mydata$value <- mydata[,opt$value]
+    mydata$label <- ordered(mydata[,opt$label])
+
+    p <- ggplot(mydata, aes(x = label, y = value, fill=label)) + 
+    ggtitle(opt$title) +
+    xlab(opt$xlab) +
+    ylab(opt$ylab) +
+    geom_bar(stat = "identity") 
+
+    ggsave(p, filename=opt$file, width=opt$width , height=opt$height)
 }
