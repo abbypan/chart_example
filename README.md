@@ -13,7 +13,7 @@ chart example,  with  ggplot2,  etc
 
 [01.chart_line.r](01.chart_line.r)
 
-![01_chart_line.png](01_chart_line.png)
+![01.chart_line.png](01.chart_line.png)
 
 ### chart_stacked_area 面积图
 
