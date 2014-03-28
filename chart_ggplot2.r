@@ -66,8 +66,7 @@ chart_stacked_area <- function(raw_file, opt) {
     myd$label <- ordered(myd[,opt$label])
 
     p <- ggplot(myd, 
-                aes(x=label, y=value, group=legend, fill=legend)
-                ) + 
+                aes(x=label, y=value, group=legend, fill=legend)) + 
 ggtitle(opt$title) +
 geom_area(position="fill") + 
 scale_fill_manual(values = opt$color)  +
@@ -104,6 +103,7 @@ theme(axis.text.x  = element_text(angle=opt$x_text_angle, vjust=1, hjust=1),
       plot.margin = unit(c(1,1,1,1), "cm")
       )
 
+
 ggsave(p, filename=opt$file, width=opt$width , height=opt$height)
 
 }
@@ -120,4 +120,26 @@ chart_bar <- function(raw_file, opt){
     geom_bar(stat = "identity") 
 
     ggsave(p, filename=opt$file, width=opt$width , height=opt$height)
+}
+
+chart_line_rate <- function(raw_file, opt) {
+    mydata <- read.table(raw_file, header=opt$header, sep=opt$sep)
+    mydata$value <- mydata[,opt$value]
+    mydata$label <- mydata[,opt$label]
+    mydata$y_label <- mydata[,opt$y_label]
+
+    p <- ggplot(mydata, 
+                aes(x=label, y=value,
+                    label=y_label, group ='main'
+                    )
+                ) + 
+ggtitle(opt$title) +
+geom_point(colour=opt$point_color) +
+geom_line(color=opt$color) + 
+xlab(opt$xlab) +
+ylab(opt$ylab) +
+scale_y_continuous(labels = percent_format())  + 
+    geom_text(hjust = 1.2 )
+
+ggsave(p, filename=opt$file, width=opt$width , height=opt$height)
 }

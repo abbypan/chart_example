@@ -1,7 +1,7 @@
 chart_example
 =============
 
-chart example,  with  ggplot2, rcharts etc
+chart example,  with  ggplot2,  etc
 
 ## ggplot2
 
@@ -40,32 +40,16 @@ chart example,  with  ggplot2, rcharts etc
 
 ![05.chart_bar.png](05.chart_bar.png)
 
-## symbol_line 折线图
 
-### [symbol_line-rcharts.r](symbol_line-rcharts.r)
+### chart_line_rate 折线比例图
 
-![symbol_line-rcharts.png](symbol_line-rcharts.png)
+[06.chart_line_rate.r](06.chart_line_rate.r)
+
+![06.chart_line_rate.png](06.chart_line_rate.png)
 
 
-### [symbol_line-rate-ggplot2.r](symbol_line-rate-ggplot2.r)
+### chart_hist_bar_facets 直方图，群组
 
-![symbol_line-rate-ggplot2.png](symbol_line-rate-ggplot2.png)
+[07.chart_hist_bar_facets.r](07.chart_hist_bar_facets.r)
 
-## spline_line 平滑曲线图
-
-### [spline_line-rcharts.r](spline_line-rcharts.r)
-
-![spline_line-rcharts.png](spline_line-rcharts.png)
-
-## stacked_area 面积图
-
-### [stacked_area-rcharts.r](stacked_area-rcharts.r)
-
-![stacked_area-rcharts.png](stacked_area-rcharts.png)
-
-## bar 柱状图
-
-### 直方图 [hist_bar-facets-ggplot2.r](hist_bar-facets-ggplot2.r)
-
-![hist_bar-facets-ggplot2.png](hist_bar-facets-ggplot2.png)
-
+![07.chart_hist_bar_facets.png](07.chart_hist_bar_facets.png)

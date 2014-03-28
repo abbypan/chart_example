@@ -1,7 +1,7 @@
 
 source(file ='chart_ggplot2.r')
 
-raw_file <- 'stacked_area.csv'
+raw_file <- '02.chart_stacked_area.csv'
 opt <- list(
             header = TRUE, 
             sep =',',

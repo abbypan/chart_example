@@ -1,7 +1,7 @@
 
 source(file='chart_ggplot2.r')
 
-raw_file <- 'symbol_line.csv'
+raw_file <- '01.chart_line.csv'
 opt <- list(
             header = TRUE, 
             sep =',',

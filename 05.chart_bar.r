@@ -1,7 +1,7 @@
 
 source(file='chart_ggplot2.r')
 
-raw_file <- 'word_freq.csv'
+raw_file <- '05.chart_bar.csv'
 
 opt <- list( header=TRUE, sep =',', value = 'freq', label = 'word',
             xlab = '´Ê', ylab = 'Æµ', title = '²âÊÔ', 
