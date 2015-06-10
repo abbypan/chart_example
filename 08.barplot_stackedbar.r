@@ -17,10 +17,10 @@ barplot(
         angle=c(45,90,135), 
         density=c(10,10,10), 
 
-        main="²âÊÔ",
+        main="æµ‹è¯•",
         names.arg=c('OBJ_A','OBJ_B'),
 
         xlim=c(0,3),
-        legend.text = c("ÓÅ","Á¼","²î"), 
+        legend.text = c("ä¼˜","è‰¯","å·®"), 
         args.legend = list(x = 3, y = 50)
         ) 
